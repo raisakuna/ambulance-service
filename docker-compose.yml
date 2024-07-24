@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  sk-ambulance-service:
+    image: sakuna-image  # Specify the desired image name and tag
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sakuna-service-container
+    networks:
+      - vastika-network
+    restart: always
+    ports:
+      - '9091:8080'
+
+  sk-postgres:
+    image: postgres
+    container_name: postgres-database
+    restart: always
+    networks:
+      - vastika-network
+    ports:
+      - '5432:5432'
+
+networks:
+  vastika-network:
+    external: true

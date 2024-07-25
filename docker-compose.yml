@@ -12,14 +12,7 @@ services:
     ports:
       - '9091:8080'
 
-  sk-postgres:
-    image: postgres
-    container_name: postgres-database
-    restart: always
-    networks:
-      - vastika-network
-    ports:
-      - '5432:5432'
+
 
 networks:
   vastika-network:

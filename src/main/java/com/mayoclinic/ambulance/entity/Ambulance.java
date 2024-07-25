@@ -1,4 +1,4 @@
-package com.mayoclinic.ambulance.controller;
+package com.mayoclinic.ambulance.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

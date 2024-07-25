@@ -8,14 +8,15 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1")
 public class AmbulanceController {
 
-    @GetMapping(value="/ambulance")
+    @GetMapping(value="/create")
     public String getListOfAmbulance(){
         return "handling request";
     }
 
     @GetMapping(value="/ambulance/city")
     public String getListOfAmbulanceOfParticularCity(@RequestParam("city") String city){
-        return "handling request";
+
+        return "List of ambulance " + city ;
     }
 
     @PutMapping(value="/ambulance")

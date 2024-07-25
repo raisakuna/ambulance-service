@@ -1,3 +1,4 @@
+/*
 package com.mayoclinic.ambulance.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,3 +31,4 @@ public class AmbulanceControllerV2 {
         return "handling request";
     }
 }
+*/

@@ -11,7 +11,12 @@ services:
     restart: always
     ports:
       - '9091:8080'
-
+  postgres:
+    image:postgres
+    container_name: postgres-database
+    restart: always
+    ports:
+      - '5433:5432'
 
 
 networks:
